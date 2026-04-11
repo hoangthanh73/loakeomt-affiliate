@@ -1,0 +1,52 @@
+@use "./variables" as *;
+
+.footer-section {
+  background-color: #111111; // Đen sâu chuẩn
+  padding: 60px 0 30px;
+  border-top: 1px solid rgba($c-white, 0.05);
+
+  .footer-title {
+    color: $c-white;
+    font-family: $f-title; // Playfair Display
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($c-white, 0.05);
+    border-radius: 8px;
+    color: $c-primary; // Màu cam của bạn
+    transition: 0.3s;
+  }
+
+  .hover-primary:hover {
+    .icon-box {
+      background-color: $c-primary;
+      color: $c-white;
+      transform: scale(1.1);
+    }
+  }
+
+  .footer-link {
+    color: rgba($c-white, 0.5);
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $c-primary !important;
+      padding-left: 5px;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba($c-white, 0.05);
+    color: rgba($c-white, 0.3);
+  }
+}

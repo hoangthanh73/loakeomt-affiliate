@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+.blog-page {
+  // Phần lớn layout đã dùng class BS5 (py-5, bg-light)
+  
+  .page-btn {
+    // Sử dụng biến Radius và Shadow của bạn
+    background-color: $c-white;
+    border: 1px solid $c-border;
+    color: $t-heading;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $r-sm; // Bo góc 8px từ biến của bạn
+    font-weight: $t-bold;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-sm; // Đổ bóng nhẹ
+
+    &:hover:not(.disabled):not(.active) {
+      border-color: $c-primary;
+      color: $c-primary;
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+
+    &.active {
+      background-color: $c-primary;
+      border-color: $c-primary;
+      color: $c-white;
+      box-shadow: $shadow-md;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background-color: $c-light;
+    }
+  }
+}
+
+// Custom lại PostCard để ăn theo shadow và radius đồng bộ
+.post-card {
+  border-radius: $r-md !important; // 12px
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  border: 1px solid $c-border;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+    transform: translateY(-5px);
+  }
+}

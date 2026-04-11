@@ -1,0 +1,99 @@
+@use './variables' as *;
+
+// product-card.scss
+// Giả định các biến $c-primary, $f-bold... đã được import trước đó
+
+.product-card {
+  height: 100%;
+  background: $c-white;
+  border: 1px solid $c-border;
+  border-radius: $r-md; // Bo góc 12px
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: $shadow-sm;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-hover;
+    border-color: $c-primary;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    padding-top: 100%; // Giữ ảnh vuông 1:1 cực chuẩn trên mobile
+    background-color: #f8f9fa;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; // Tránh méo ảnh củ loa/mạch
+      padding: 12px;
+    }
+  }
+
+  &__category-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    font-weight: $t-bold;
+    padding: 3px 8px;
+    border-radius: $r-xs;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+
+  &__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: $t-sm; // 14px-16px
+    font-weight: $t-bold;
+    color: $t-heading;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    // Giới hạn 2 dòng tiêu đề
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.8em; 
+  }
+
+  &__short-desc {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    // Giới hạn 2 dòng mô tả
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .btn-primary-affiliate {
+    margin-top: auto;
+    background-color: #ff6a00; // Màu cam Shopee/Lazada kích thích mua hàng
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: $t-bold;
+    border-radius: $r-sm; // Bo góc 8px
+    transition: background 0.2s;
+
+    &:hover {
+      background-color: darken(#ff6a00, 10%);
+    }
+  }
+}

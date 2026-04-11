@@ -1,0 +1,72 @@
+@use './variables' as *;
+
+.contact-page {
+  // Avatar & Status
+  .avatar-container {
+    position: relative;
+    display: inline-block;
+    .avatar-main {
+      width: 80px;
+      height: 80px;
+      border-radius: $r-full;
+      border: 3px solid $c-primary;
+      object-fit: cover;
+    }
+    .status-badge {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #28a745;
+      color: white;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: $r-full;
+      border: 2px solid #212529;
+    }
+  }
+
+  // Contact Card
+  .contact-card {
+    background: $c-white;
+    border-radius: $r-md;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+
+    &:hover, &.active-card {
+      border-color: $c-primary;
+      transform: translateY(-3px);
+      box-shadow: $shadow-md !important;
+    }
+
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: $r-sm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .zalo-bg { background: #0068ff; }
+    .phone-bg { background: $c-dark; }
+    .yt-bg { background: #ff0000; }
+  }
+
+  // QR & Badges
+  .qr-img {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    border: 1px dashed $c-border;
+    border-radius: $r-md;
+  }
+
+  .badge {
+    border-radius: $r-full;
+    font-weight: $t-medium;
+  }
+}

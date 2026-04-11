@@ -1,0 +1,89 @@
+@use "./variables" as *;
+
+// CTA Section Styling
+.cta-section {
+  padding: 60px 0;
+  background-color: transparent; // Để lộ nền web hoặc dùng màu $c-light
+
+  .cta-wrapper {
+    position: relative;
+    overflow: hidden;
+    // Gradient cam - hồng đặc trưng của Kỳ Tích
+    background: linear-gradient(135deg, $c-primary 0%, #ee0979 100%);
+    border-radius: $r-lg; // Bo góc 24px-30px
+    color: $c-white;
+    z-index: 1;
+
+    // Tạo các đốm sáng mờ ảo phía sau (Abstract Shapes)
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba($c-white, 0.1);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 200px;
+      height: 200px;
+      background: rgba($c-white, 0.05);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    // Tiêu đề Playfair Display
+    .cta-title {
+      font-family: "'Playfair Display', serif";
+      font-style: italic;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .cta-desc {
+      opacity: 0.9;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    // Nút bấm Fanpage nổi bật
+    .btn-fb-cta {
+      background-color: $c-white;
+      color: $c-primary;
+      border: none;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 14px 40px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        color: #ee0979;
+      }
+
+      &:active {
+        transform: translateY(-2px);
+      }
+
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

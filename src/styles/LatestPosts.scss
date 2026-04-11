@@ -1,0 +1,62 @@
+@use './variables' as *;
+
+.latest-post {
+  // --- MOBILE FIRST ---
+  padding: 40px 0;
+  background-color: $c-light; // Nền xám nhạt để phân biệt với phần HotPost nền trắng
+
+  &__header {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-family: $f-title;
+    font-size: $t-xl; // 20px trên mobile
+    font-weight: $t-bold;
+    color: $t-heading;
+    margin-bottom: 10px;
+  }
+
+  &__line {
+    width: 60px;
+    height: 2px;
+    background-color: $c-secondary; // Dùng màu xanh để khác biệt với HotPost (màu cam)
+    margin: 0 auto; // Căn giữa trên mobile
+
+    @media (min-width: 768px) {
+      margin: 0; // Căn trái trên desktop
+    }
+  }
+
+  &__btn-all {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid $c-dark;
+    color: $c-dark;
+    font-size: $t-sm;
+    font-weight: $f-bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $c-dark;
+      color: $c-white;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%; // Full width trên mobile cho thợ dễ bấm
+    }
+  }
+
+  // --- DESKTOP ---
+  @media (min-width: 768px) {
+    padding: 60px 0;
+
+    &__title {
+      font-size: $t-2xl; // 24px
+    }
+  }
+}

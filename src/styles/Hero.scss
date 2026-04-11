@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+.hero-section {
+  position: relative;
+  background: $c-light;
+
+  // Hiệu ứng chữ Gradient - Điểm nhấn bắt mắt nhất
+  .text-gradient {
+    background: linear-gradient(90deg, $c-primary, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  // Tinh chỉnh nhẹ cho các nút bấm để ăn theo biến Radius của bạn
+  .btn {
+    border-radius: $r-md; // Bo 12px theo ý bạn
+    transition: all 0.3s ease;
+
+    &-lg {
+      font-size: $t-base;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+    
+    &.rounded-pill {
+      border-radius: $r-full !important; // 999px cho các nút social
+    }
+  }
+
+  // Thêm một lớp nền mờ ảo phía sau (Mesh Gradient)
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba($c-primary, 0.08) 0%, transparent 70%);
+    z-index: 0;
+  }
+}

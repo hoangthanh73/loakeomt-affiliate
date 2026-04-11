@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use './Header.scss' as*;
+@use './Footer.scss' as*;
+@use './Hero.scss' as *;
+@use './ProductCard.scss' as *;
+@use './HotProducts.scss' as *;
+@use './LatestPosts.scss' as *;
+@use './CTA.scss' as *;
+
+@use './Products.scss' as *;
+
+@use './PostCard.scss' as *;
+@use './BlogPage.scss'  as *;
+
+@use './ContactPage.scss' as *;
+
+@use './BlogPost.scss' as *;
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $f-main;
+}

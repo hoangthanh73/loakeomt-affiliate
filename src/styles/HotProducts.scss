@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+.hot-products {
+  // Tạo một chút đổ bóng nhẹ cho cả vùng để tách biệt với Hero
+  border-top: 1px solid $c-border;
+  
+  h2 {
+    font-family: $f-title;
+    @media (max-width: 768px) {
+      font-size: 1.5rem; // Tiêu đề vừa phải trên mobile
+    }
+  }
+
+  .tracking-wider {
+    letter-spacing: 1px;
+  }
+
+  // Tối ưu khoảng cách Grid trên mobile để ảnh sản phẩm không bị quá bé
+  .row.g-3 {
+    @media (max-width: 576px) {
+      --bs-gutter-x: 0.75rem; // Khoảng cách 12px giữa 2 card
+    }
+  }
+}

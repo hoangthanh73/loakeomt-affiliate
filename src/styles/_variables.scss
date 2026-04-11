@@ -1,0 +1,137 @@
+// =====================
+// COLORS
+// =====================
+
+$c-primary: #ff6a00;
+$c-secondary: #0d6efd;
+
+$c-dark: #111827;
+$c-gray: #6b7280;
+
+$c-light: #f8f9fa;
+$c-white: #ffffff;
+
+$c-text: #1f2937;
+$c-text-light: #6b7280;
+
+$c-bg: #ffffff;
+$c-bg-dark: #111827;
+
+$c-border: #e5e7eb;
+
+$c-hover: #ff8533;
+
+
+
+// =====================
+// FONT FAMILY
+// =====================
+
+// Main text
+$f-main: Arial, Helvetica, sans-serif;
+
+// Title font
+$f-title: "Playfair Display", serif;
+
+
+
+// =====================
+// FONT SIZE
+// =====================
+
+$f-xs: 12px;
+$f-sm: 14px;
+$f-base: 16px;
+$f-lg: 18px;
+$f-xl: 20px;
+$f-2xl: 24px;
+$f-3xl: 30px;
+$f-4xl: 36px;
+
+
+
+// =====================
+// FONT WEIGHT
+// =====================
+
+$f-normal: 400;
+$f-medium: 500;
+$f-semibold: 600;
+$f-bold: 700;
+
+
+
+// =====================
+// LINE HEIGHT
+// =====================
+
+$f-line-sm: 1.4;
+$f-line-base: 1.6;
+$f-line-lg: 1.8;
+
+
+
+// =====================
+// TEXT VARIABLES (quan trọng)
+// =====================
+
+// text màu chính
+$t-color: $c-text;
+
+// text phụ
+$t-muted: $c-text-light;
+
+// text sáng (footer nền tối)
+$t-light: $c-white;
+
+// text tiêu đề
+$t-heading: $c-dark;
+
+// text link
+$t-link: $c-primary;
+
+// text hover
+$t-link-hover: $c-hover;
+
+
+
+// =====================
+// TEXT SIZE (semantic)
+// =====================
+
+$t-xs: $f-xs;
+$t-sm: $f-sm;
+$t-base: $f-base;
+$t-lg: $f-lg;
+$t-xl: $f-xl;
+$t-2xl: $f-2xl;
+$t-3xl: $f-3xl;
+
+// =====================
+// TEXT WEIGHT (semantic)
+// =====================
+
+$t-normal: $f-normal;
+$t-medium: $f-medium;
+$t-semibold: $f-semibold;
+$t-bold: $f-bold;
+
+
+// =====================
+// SHADOWS (Đổ bóng)
+// =====================
+$shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+$shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+
+
+// =====================
+// BORDER RADIUS
+// =====================
+$r-xs: 4px;    // Bo nhẹ (Nút nhỏ, tag)
+$r-sm: 8px;    // Bo vừa (Input, dropdown)
+$r-md: 12px;   // Chuẩn (Product Card, Post Card)
+$r-lg: 16px;   // Bo mạnh (Section nổi bật, Banner)
+$r-xl: 24px;   // Rất mạnh
+$r-full: 999px; // Hình tròn/Hình nhộng (Nút pill)

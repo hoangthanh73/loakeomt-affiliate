@@ -1,0 +1,113 @@
+@use "./variables" as *;
+
+// .header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 999;
+//   background: $c-white;
+//   border-bottom: 1px solid $c-border;
+
+//   /* ===== MOBILE FIRST ===== */
+
+//   .navbar {
+//     padding: 10px 0;
+//   }
+
+//   .navbar-brand {
+//     font-family: $f-title;
+//     font-size: $f-lg;
+//     font-weight: $f-bold;
+//     color: $t-heading;
+//   }
+
+//   .navbar-toggler {
+//     border: none;
+//   }
+
+//   .nav-link {
+//     position: relative;
+//     color: $t-color;
+//     transition: 0.2s;
+
+//     &:hover {
+//       color: $t-link;
+//     }
+
+//     &.active {
+//       color: $t-link;
+//       font-weight: $t-semibold;
+//     }
+
+//     /* Gạch dưới active */
+
+//     &.active::after {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       bottom: -4px;
+//       width: 100%;
+//       height: 2px;
+//       background: $c-primary;
+//     }
+//   }
+
+//   .nav-social {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px;
+//     margin-top: 12px;
+//   }
+
+//   /* ===== TABLET ===== */
+
+//   @media (min-width: 768px) {
+//     .nav-link {
+//       font-size: $t-sm;
+//     }
+//   }
+
+//   /* ===== DESKTOP ===== */
+
+//   @media (min-width: 992px) {
+
+//     .nav-link {
+//       padding: 8px 12px;
+//       border: none;
+//     }
+
+//     .nav-social {
+//       flex-direction: row;
+//       margin-top: 0;
+//       margin-left: 12px;
+//     }
+//   }
+// }
+
+.navbar {
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem !important;
+    color: $t-heading !important;
+    transition: color 0.2s;
+
+    &:hover, &.active {
+      color: $c-primary !important;
+    }
+  }
+
+  // Khi ở mobile, các mục menu sẽ có border dưới nhẹ để tách biệt
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding-top: 1rem;
+    }
+    .nav-item {
+      border-bottom: 1px solid #f8f9fa;
+      &:last-child { border-bottom: none; }
+    }
+  }
+
+  .btn-sm {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+}
