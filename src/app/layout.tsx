@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     google: "my-CHcwqC1OrXcyunrYLCTpl2V4JgTI188eWuZiLMJo", 
   },
 };
-
 export default function RootLayout({
   children,
 }: {
