@@ -38,7 +38,7 @@ export const posts: Post[] = [
     featured: true,
     shopeeLink: "https://s.shopee.vn/5AoR0fEAX2", // Link mới của bạn
   }, {
-    id: 18,
+    id: 3,
     title: "Review Bass 40 RCF Xương Cá Từ 190 Coil 75: Uy lực loa kéo 4 tấc đơn",
     slug: "review-bass-40-rcf-tu-190-coil-75",
     category: "Review Linh Kiện",
@@ -49,7 +49,7 @@ export const posts: Post[] = [
     featured: true,
     shopeeLink: "https://s.shopee.vn/8fOJEHNHlA", 
   },{
-    id: 19,
+    id: 4,
     title: "Đánh giá Bo Mạch Loa Kéo V450 Công Suất 300W: Uy lực cho loa kéo 5 tấc đôi",
     slug: "review-bo-mach-loa-keo-v450",
     category: "Review Linh Kiện",
@@ -59,5 +59,17 @@ export const posts: Post[] = [
     date: "2026-04-13",
     featured: true,
     shopeeLink: "https://s.shopee.vn/5AoWI1zcEo",
+  },
+  {
+    id: 5,
+    title: "Review Bass 10 Từ 80 Coil 25: Lựa chọn số 1 cho loa Bluetooth mini",
+    slug: "review-bass-10-tu-80-coil-25",
+    category: "Review Linh Kiện",
+    summary: "Đánh giá chi tiết dòng bass 1 tấc (Bass 10) chuyên dụng cho loa xách tay nhỏ gọn. Nhỏ nhưng có võ với từ 80 và coil 25.",
+    image: "/images/blog/review-bass-10-tu-80-coil-25/1.png",
+    author: "Kỳ Tích",
+    date: "2026-04-16",
+    featured: true,
+    shopeeLink: "https://s.shopee.vn/70GEfksUvn", 
   },
 ];

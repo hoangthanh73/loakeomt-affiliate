@@ -123,5 +123,14 @@ export const products: Product[] = [
     details: "Dòng bass siêu trầm (Subwoofer) đỉnh cao với nam châm Ferrite khổng lồ 280mm và coil đồng chịu nhiệt lên đến 125mm. Thiết kế xương nhôm đúc cực dày, màng loa chuyên dụng có độ đàn hồi tốt giúp tái tạo dải siêu trầm từ 30Hz - 200Hz cực kỳ mạnh mẽ, chắc tiếng và sâu lắng. Chuyên dùng cho các thùng sub hơi sân khấu hoặc sub điện công suất lớn.",
     image: "/images/products/13.png",
     link: "https://s.shopee.vn/3fzdHOCe8s"
-  }
+  },
+  {
+    id: 14,
+    title: "Loa Bass 10 RCF - Từ 80 Coil 25 - Chuyên Loa cây, loa ô tô, loa bluetooth",
+    category: "bass",
+    shortDescription: "Bass 1 tấc, Từ 80mm, Coil 25mm, Công suất 30W - 60W",
+    details: "Dòng bass mini chất lượng cao với từ Ferrite 80mm và coil đồng 25mm. Thích hợp cho anh em ráp loa bluetooth, loa xách tay nhỏ gọn hoặc làm loa trung cho dàn âm thanh.",
+    image: "/images/products/14.png",
+    link: "https://s.shopee.vn/70GEfksUvn", // Bạn hãy thay link Shopee thực tế của sản phẩm này vào đây
+  },
 ];
